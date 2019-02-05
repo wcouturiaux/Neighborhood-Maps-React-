@@ -1,0 +1,31 @@
+{
+  "name": "neighborhood-maps-react-",
+  "version": "1.0.0",
+  "description": "React Project utilizing Google maps API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wcouturiaux/Neighborhood-Maps-React-.git"
+  },
+  "keywords": [
+    "FEND",
+    "Udacity",
+    "Neighborhood",
+    "Maps"
+  ],
+  "author": "William Couturiaux",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wcouturiaux/Neighborhood-Maps-React-/issues"
+  },
+  "homepage": "https://github.com/wcouturiaux/Neighborhood-Maps-React-#readme",
+  "dependencies": {
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "webpack": "^4.29.1",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
