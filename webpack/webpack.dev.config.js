@@ -14,5 +14,9 @@ module.exports = {
       test/\.less$/,
       loaders: ["style-loader", "css-loader", "less-loader"]
     }]
+  },
+  output: {
+    path: __dirname + '/dist',
+    filename: 'bundle.js'
   }
 }
