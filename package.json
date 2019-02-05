@@ -4,7 +4,8 @@
   "description": "React Project utilizing Google maps API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "./node_modules/.bin/webpack-dev-server --config ./webpack/webpack.dev.config.js"
   },
   "repository": {
     "type": "git",
@@ -40,7 +41,8 @@
     "css-loader": "^2.1.0",
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
-    "style-loader": "^0.23.1"
+    "style-loader": "^0.23.1",
+    "webpack-cli": "^3.2.3"
   },
   "babel": {
     "presets": [
@@ -51,9 +53,5 @@
     "plugins": [
       "transform-object-rest-spread"
     ]
-  },
-  "scripts": {
-  "test": "echo \"Error: no test specified\" && exit 1",
-  "dev": "./node_modules/.bin/webpack-dev-server --config ./webpack/webpack.dev.config.js"
   }
 }
