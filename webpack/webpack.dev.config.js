@@ -1,0 +1,18 @@
+var webpack = require('webpack');
+var path = require('path');
+
+module.exports = {
+  entry: [
+    path.join(_dirname, '../index.js')
+  ],
+  module: {
+    loaders: [{
+      test: /\.(js|jsk)$/,
+      exclude: /node_modules/,
+      loader: 'babel-loader'
+    },{
+      test/\.less$/,
+      loaders: ["style-loader", "css-loader", "less-loader"]
+    }]
+  }
+}
