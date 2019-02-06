@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/wcouturiaux/Neighborhood-Maps-React-#readme",
   "dependencies": {
+    "google-maps-react": "^2.0.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "webpack": "^4.29.1",
