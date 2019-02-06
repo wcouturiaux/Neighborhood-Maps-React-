@@ -7,7 +7,7 @@ module.exports = {
     path.join(parentDir, 'index.js')
   ],
   module: {
-    loaders: [{
+    rules: [{
       test: /\.(js|jsk)$/,
       exclude: /node_modules/,
       loader: 'babel-loader'
@@ -17,11 +17,12 @@ module.exports = {
     }]
   },
   output: {
+    publicPath: '/',
     path: __dirname + '/dist',
     filename: 'bundle.js'
   },
   devServer: {
-    contentBase: __dirname + '/dist',
+    contentBase: parentDir,
     historyApiFallback: true
   }
 }
