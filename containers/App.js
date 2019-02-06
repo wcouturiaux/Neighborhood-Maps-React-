@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import  Map from './map'
+import  {Map, GoogleApiWrapper} from 'google-maps-react';
 
 export default class App extends Component {
     render () {
-        return <Map />
+        return <Map google={this.props.google}/>
     }
 }
