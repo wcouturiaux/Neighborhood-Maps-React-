@@ -1,10 +1,17 @@
 import React, {Component} from 'react';
 import  {Map, GoogleApiWrapper} from 'google-maps-react';
+import Nav from './nav';
+import mapStyle from '../styles/map.less'
 
 export class App extends Component {
     render () {
         return (
-          <Map google={this.props.google}/>
+          <div className={mapStyle.container}>
+            <Nav />
+            <div className={mapStyle.map}>
+              <Map google={this.props.google}/>
+            </div>
+          </div>
         );
     }
 }
