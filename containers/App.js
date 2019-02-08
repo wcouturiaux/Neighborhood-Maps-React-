@@ -10,6 +10,22 @@ export class App extends Component {
     activeMarker: {},         //Manage active marker
     selectedPlace: {}        //Show info window on marker
   }
+
+  onMarkerClick = (props, marker, e) =>
+    this.setState({
+      selectedPlace: props,
+      activeMarker: marker,
+      showingInfoWindow: true
+    });
+
+  onClose = props => {
+    if (this.state.showingInfoWindow) {
+      this.setState({
+        showingInfoWindow: false,
+        activeMarker: null
+      });
+    }
+  }
     render () {
         return (
           <div className={mapStyle.container}>
