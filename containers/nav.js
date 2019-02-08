@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import style from '../styles/menu.less';
+import style from '../styles/nav.less';
 
 export default class Nav extends Component {
 
